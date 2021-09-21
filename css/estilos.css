@@ -1,0 +1,327 @@
+*{
+	box-sizing: border-box;
+	margin:0; 
+	padding:0;
+}
+@font-face {
+	font-family: NotoSans-Regular;
+	src: url(Noto_Sans/NotoSans-Regular.ttf),
+	url(Noto_Sans/NotoSans-Bold.ttf),
+	url(Noto_Sans/NotoSans-Italic.ttf);
+}
+	
+body{
+	font-family: NotoSans-Regular;
+}
+h1, h2, h3{
+	color: #fd7400;
+	text-align: center;
+}
+h2{
+	font-size: 2em;
+}
+section{
+	margin: 4em 0;
+}
+p{
+	color: #004258;
+	font-size: 1em;
+    line-height: 1.4em;
+}
+h1{
+	display:none;
+}
+.navbar-custom {
+       border-bottom: 1px solid #fd7400;
+       margin-bottom: 1em;
+}
+
+.nav-link{
+	color: #fd7400;
+	    font-size: 1.2em;
+}
+
+/*--------------HERO--------------------------*/
+.heroBox{
+max-width: 1920px;
+margin:auto;
+}
+#heroText{
+	    padding: 1.1em;
+}
+#heroText p{
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+.pastilla{
+	text-align: center;
+}
+/*--------------------------------------------*/
+/*--------------SUSTENTABILIDAD---------------*/
+
+main.container article:nth-of-type(2n){
+	background: #bedb39;
+}
+main.container article:nth-of-type(2n) h3{
+	color:#004258;
+}
+
+/*------------------VIDA VEGANA---------------*/
+
+#recetas{
+text-align: center;
+background-color: #fd7400;
+    padding-bottom: 5em;
+}
+#recetas h3{
+	font-size: 1.5em;
+	color: #fff;
+}
+#recetas p{
+	color: #fff;
+}
+
+#frutas{
+	width: 320px;
+    margin: auto;
+}
+
+#textFrutas{
+ padding: 1em;
+}
+#textFrutas p{
+	font-size: 1.2em;
+}
+
+/*----------------PRODUCTOS-------------------*/
+
+#carouselProductos{
+ margin:3em 0;
+}
+.carousel-caption{
+	top:-18%;
+	left: 25%;
+}
+.carousel-indicators li{
+	background-color:transparent;
+}
+/*----------------RECETAS----------------------*/
+
+
+/*---------------------------------------------*/
+/*------------------FORMULARIO----------------*/
+#contacto{
+	text-align: center;
+}
+
+#formulario{
+	padding: 1em;
+	text-align: left;
+}
+#formulario div{
+	margin-bottom: 1em;
+}
+input,
+select{
+	width: 100%;
+	height: 40px;
+	border-color: #fd7400;
+	border-radius: 10px;
+}
+textarea{
+	width: 100%;
+	height: 60px;
+	border-radius: 10px;
+	border-color: #fd7400;
+}
+
+input[type=submit]{
+	background-color: #fd7400;
+	color: #fff;
+	font-size: 1em;
+	font-weight: bold;
+}
+div#graciasForm {
+    display: none;
+    margin: auto;
+    border: 2px solid #fd7400;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1em;
+    padding: 1em;
+    margin-bottom: 2em;
+    
+}
+
+
+div#graciasForm:target {
+	display: block;
+}
+/*--------------------------------------------*/
+/*--------------FOOTER------------------------*/
+
+#footerBox{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#footerBox div {
+	margin: .5em 0;
+}
+#footerBox ul li{
+	display:inline;
+	
+}
+
+#redesSociales ul li{
+	margin-right: 1em;
+}
+
+/*---------------------------------------------------*/
+/*------------------375px----------------------------*/
+@media screen and (min-width: 375px) {
+ /*--------------SUSTENTABILIDAD---------------*/
+	main.container article{
+		padding: 2em;
+	}
+}
+
+
+
+
+/*------------------768px----------------------------*/
+@media screen and (min-width: 768px) {
+	h2 {
+    font-size: 2.5em;
+ }
+
+	p{
+	font-size: 1.4em;
+    line-height: 1.4em;
+}
+
+
+
+.borde {
+    border: 1px solid black;
+}
+/*--------------HERO--------------------------*/
+#heroText p{
+   text-align: center;
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+    
+.pastilla{
+	text-align: center;
+}
+/*--------------------------------------------*/
+
+/*--------------SUSTENTABILIDAD---------------*/
+.textBox{
+	padding: 1em 2em;
+}
+
+/*----------------------------------------------*/
+/*-------------RECETAS--------------------------*/
+#recetas p {
+    font-size: 1.4em;
+    line-height: 1em;
+}
+.carousel-caption{
+	top:0%;
+	left:15%;
+}
+/*-----------------------------------------------*/
+/*-------------VIDA-VEGANA----------------------*/
+
+#frutas{
+	display: none;
+	}
+		#backgroundFrutas{
+		background-image: url(../images/banner/veggie-banner.jpg);
+		background-size: cover;
+		height: 500px;
+
+
+	}
+
+	#overlay{
+		background-color: #000;
+		opacity: .8;
+		width: 50%;
+		height: 500px;
+		padding: 1em;
+		position: absolute;
+		right: 0;
+		
+		
+	}
+		#overlay p{
+			color: #fff;
+		}
+		#textFrutas p{
+		font-size: 1.1em;
+	}
+/*-------------RECETAS----------------------*/
+	#recetas h3{
+	font-size: 2em;
+}
+
+/*------------------------------------------*/
+/*-------------FORMULARIO----------------------*/
+input[type=submit]{
+	width:100px;
+}
+/*------------------------------------------*/
+}	
+/*-------------1024px----------------------*/
+@media screen and (min-width: 1024px) {
+.carousel-inner {
+
+    width: 75% !important;
+    margin: auto;
+}
+}
+/*-------------1440px----------------------*/
+@media screen and (min-width: 1440px) {
+	#heroText p{
+		font-size: 1.4em;
+	}
+	#textFrutas p {
+    font-size: 1.4em;
+    line-height: 1.1em;
+}
+
+}
+/*------------FIN--768px-----------------------*/
+/*.fondo1 {
+    background-color: pink;
+}
+
+.fondo2 {
+    background-color: lightcoral;
+}
+
+.fondo3 {
+    background-color: lightsalmon;
+}
+
+.fondo4 {
+    background-color: palegreen;
+}
+
+.fondo5 {
+    background-color: darkseagreen;
+}
+
+.fondo6 {
+    background-color: aquamarine;
+}
+
+.alto {
+    height: 500px;
+}*/
+
